@@ -1,0 +1,59 @@
+$lighten: 15%;
+
+.content {
+  height: 100vh;
+  text-align: center;
+  background: #222222;
+  background: -moz-linear-gradient(top, #000000 0%, #222222 100%);
+  background: -webkit-linear-gradient(top, #000000 0%,#222222 100%);
+  background: linear-gradient(to bottom, #000000 0%,#222222 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#515151',GradientType=0 );
+  background-size: cover;
+  background-position: center;
+  h1, h2 {
+    font-family: 'Ludicrous', Arial;
+    margin: 0;
+    padding: 0 50px;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  .content-info {
+    position: relative;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+  }
+
+  $block_color: #FFF;
+  &#deluxe_cafe {
+    background-image: url(../img/block__deluxe-cafe__background.jpg);
+    h1 {
+      img {
+        color: $block_color;
+        width: 100%;
+        max-width: 300px;
+      }
+    }
+    h2 {
+      color: lighten($block_color, $lighten);
+      margin-top: -15px;
+    }
+  }
+
+  $block_color: #89f58b;
+  &#deluxe_coffee {
+    background-image: url(../img/block__coffee__background.jpg);
+    h1 {
+      color: $block_color;
+    }
+    h2 {
+      color: lighten($block_color, $lighten);
+    }
+  }
+
+
+}

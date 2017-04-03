@@ -1,0 +1,48 @@
+$fscroll_color: #ff5722;
+
+ul.fscroll {
+  position: fixed;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  list-style: none;
+  padding: 0;
+  z-index: 1000000;
+  li {
+    a {
+      width: 15px;
+      height: 15px;
+      margin: 10px;
+      border-radius: 50%;
+      border: 2px solid $fscroll_color;
+      display: block;
+      transition: border 0.3s;
+
+      span {
+        position: absolute;
+        right: 35px;
+        padding: 3px 7px;
+        color: #222;
+        background: #FFF;
+        border-radius: 3px;
+        font-size: 12px;
+        margin-top: -3px;
+        opacity: 0.7;
+        display: none;
+      }
+
+      &:hover {
+        border-color: lighten($fscroll_color, 30);
+        span {
+          display: block;
+        }
+      }
+
+    }
+    &.active {
+      a {
+        border-color: complement($fscroll_color);
+      }
+    }
+  }
+}
