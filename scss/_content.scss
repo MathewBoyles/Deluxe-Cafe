@@ -1,5 +1,9 @@
 $lighten: 15%;
 
+.hide {
+  display: none!important;
+}
+
 .content {
   height: 100vh;
   text-align: center;
@@ -12,6 +16,8 @@ $lighten: 15%;
   background-position: center;
   h1, h2 {
     font-family: 'Ludicrous', Arial;
+  }
+  h1, h2, p {
     margin: 0;
     padding: 0 50px;
   }
@@ -41,6 +47,11 @@ $lighten: 15%;
     h2 {
       color: lighten($block_color, $lighten);
       margin-top: -15px;
+      margin-bottom: 20px;
+    }
+    a {
+      color: #FFF;
+      font-size: 3em;
     }
   }
 
@@ -53,7 +64,34 @@ $lighten: 15%;
     h2 {
       color: lighten($block_color, $lighten);
     }
+    button {
+      margin-top: 20px;
+    }
+    img {
+      bottom: -100%;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: 700px;
+      width: 100%;
+    }
   }
 
+  $block_color: #a2faf8;
+  &#deluxe_food {
+    background-image: url(../img/block__food__background.jpg);
+    h1 {
+      color: $block_color;
+    }
+    h2, p {
+      color: lighten($block_color, $lighten);
+    }
+    p {
+      margin-top: 10px;
+    }
+    button {
+      margin-top: 20px;
+    }
+  }
 
 }

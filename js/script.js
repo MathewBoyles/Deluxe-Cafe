@@ -6,8 +6,8 @@ $(document).ready(function(){
       if($(window).scrollTop() >= ($(this).offset()['top']-($(window).height()/3))) $(this).addClass('active');
       else $(this).removeClass('active');
     });
-    $('#fscroll > li.active').removeClass('active');
-    $('#fscroll > li > a[data-fscroll="#'+$('.content.active:last').attr('id')+'"]').parent().addClass('active');
+    $('.navbar > .navbar_social > li.active').removeClass('active');
+    $('.navbar > .navbar_social > li > a[data-fscroll="#'+$('.content.active:last').attr('id')+'"]').parent().addClass('active');
     if($('.content:not(.active)').is('*')) $('#scrolltip').removeClass('reverse');
     else $('#scrolltip').addClass('reverse');
   }).trigger('scroll');
@@ -18,4 +18,13 @@ $(document).ready(function(){
   $('#scrolltip').click(function(){
     $('body').animate({scrollTop: $(this).hasClass('reverse')?0:($('.content:not(.active):first').offset()['top']) },1000);
   });
+  $('[data-modal]').click(function(){
+    $('#modal-backdrop').fadeIn();
+    $($(this).attr('data-modal')).fadeIn();
+  });
+  $('#modal-backdrop').click(function(){
+    $(this).fadeOut();
+    $('.modal:visible').fadeOut();
+  });
+
 });

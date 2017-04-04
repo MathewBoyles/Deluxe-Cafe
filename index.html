@@ -9,49 +9,86 @@
 </head>
 <body>
   <nav class="navbar" id="navbar">
-    <a href="/" data-fscroll="#deluxe_cafe" class="navbar_logo"><img src="img/logo.png"></a>
+    <a href="/" data-fscroll="#deluxe_cafe" class="navbar_logo"><img src="img/logo.png" alt="Deluxe Cafe Logo"></a>
     <ul class="navbar_social">
-      <li><a href="https://www.facebook.com/deluxecafewgtn/" target="_blank"><span class="fa fa-facebook-official"></span></a></li>
+      <li class="active">
+        <a href="#" data-fscroll="#deluxe_cafe" title="Deluxe"><i class="fa fa-home"></i></a>
+      </li>
+      <li>
+        <a href="#" data-fscroll="#deluxe_coffee" title="Coffee"><i class="fa fa-coffee"></i></a>
+      </li>
+      <li>
+        <a href="#" data-fscroll="#deluxe_food" title="Food"><i class="fa fa-cutlery"></i></a>
+      </li>
+      <li>
+        <a href="#" data-fscroll="#deluxe_art" title="Art"><i class="fa fa-paint-brush"></i></a>
+      </li>
+      <li>
+        <a href="#" data-fscroll="#deluxe_location" title="Location"><i class="fa fa-map-marker"></i></a>
+      </li>
     </ul>
   </nav>
-  <ul class="fscroll" id="fscroll">
-    <li class="active">
-      <a href="#" data-fscroll="#deluxe_cafe" title="Deluxe"><span>Deluxe</span></a>
-    </li>
-    <li>
-      <a href="#" data-fscroll="#deluxe_coffee" title="Coffee"><span>Coffee</span></a>
-    </li>
-    <li>
-      <a href="#" data-fscroll="#deluxe_food" title="Food"><span>Food</span></a>
-    </li>
-    <li>
-      <a href="#" data-fscroll="#deluxe_art" title="Art"><span>Art</span></a>
-    </li>
-    <li>
-      <a href="#" data-fscroll="#deluxe_location" title="Location"><span>Location</span></a>
-    </li>
-  </ul>
   <div id="scrolltip">
     <span class="fa fa-angle-down"></span>
   </div>
 
   <div class="content" id="deluxe_cafe">
     <div class="content-info">
-      <h1><img src="img/logo.png"></h1>
+      <h1><img src="img/logo.png" alt="Deluxe Cafe Logo"></h1>
       <h2>Amazing coffee, delicous food, and an enjoyable enviromnet for everybody.</h2>
+      <a href="https://www.facebook.com/deluxecafewgtn/" target="_blank"><i class="fa fa-facebook-official"></i></a>
     </div>
   </div>
   <div class="content" id="deluxe_coffee">
     <div class="content-info">
       <h1>Amazing Coffee</h1>
       <h2>Havana coffee served fresh and hot - sure to make your taste buds dance.</h2>
+      <button class="btn" data-modal="#deluxe_coffee_menu">View Menu</button>
+    </div>
+    <img src="img/block__coffee__havana.jpg" class="b_i_havana" alt="Havana Coffee">
+  </div>
+  <div class="content" id="deluxe_food">
+    <div class="content-info">
+      <h1>Delicous Food</h1>
+      <h2>Prepared with love each day, with plenty of options for different lifestyles.</h2>
+      <p>Vegan, Vegetarian, and Gluten Free options available.</p>
+      <button class="btn" data-modal="#deluxe_food_menu">View Menu</button>
     </div>
   </div>
-  <div class="content" id="deluxe_food"></div>
   <div class="content" id="deluxe_art"></div>
   <div class="content" id="deluxe_location"></div>
 
+  <div id="modal-backdrop"></div>
+  <div id="deluxe_coffee_menu" class="modal">
+    <div class="modal-head">
+      <h1>Coffee Menu</h1>
+    </div>
+    <div class="modal-body">
+      <ul class="modal-body-list">
+        <li>
+          <h2>Title</h2>
+          <p>Perfect...</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="deluxe_food_menu" class="modal">
+    <div class="modal-head">
+      <h1>Food Menu</h1>
+    </div>
+    <div class="modal-body">
+      <ul class="modal-body-list">
+        <li>
+          <h2>Nibbles</h2>
+          <p>Our food changes daily, we generally have some or all of these items</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="js/script.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
