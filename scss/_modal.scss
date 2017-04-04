@@ -17,8 +17,37 @@
       font-family: 'Ludicrous', Arial;
       margin: 0;
     }
-    .modal-body {
-
+  }
+  .modal-body {
+    $list_img_size: 90px;
+    .modal-body-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      li {
+        height: $list_img_size;
+        img {
+          height: $list_img_size;
+          float: left;
+          margin-right: 15px;
+        }
+        h2 {
+          margin: 0;
+          padding-top: 18px;
+          font-size: 20px;
+        }
+        p {
+          margin: 0;
+        }
+        &:nth-child(even) {
+          background: #EEE;
+        }
+      }
+      &.modal-body-list-nop {
+        h2 {
+          padding-top: 35px;
+        }
+      }
     }
   }
 }

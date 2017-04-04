@@ -110,7 +110,8 @@ html, body {
   background-size: cover;
   background-position: center; }
   .content h1, .content h2 {
-    font-family: 'Ludicrous', Arial; }
+    font-family: 'Ludicrous', Arial;
+    letter-spacing: 1.5px; }
   .content h1, .content h2, .content p {
     margin: 0;
     padding: 0 50px; }
@@ -210,6 +211,26 @@ html, body {
       text-align: center;
       font-family: 'Ludicrous', Arial;
       margin: 0; }
+  .modal .modal-body .modal-body-list {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .modal .modal-body .modal-body-list li {
+      height: 90px; }
+      .modal .modal-body .modal-body-list li img {
+        height: 90px;
+        float: left;
+        margin-right: 15px; }
+      .modal .modal-body .modal-body-list li h2 {
+        margin: 0;
+        padding-top: 18px;
+        font-size: 20px; }
+      .modal .modal-body .modal-body-list li p {
+        margin: 0; }
+      .modal .modal-body .modal-body-list li:nth-child(even) {
+        background: #EEE; }
+    .modal .modal-body .modal-body-list.modal-body-list-nop h2 {
+      padding-top: 35px; }
 
 #modal-backdrop {
   display: none;
