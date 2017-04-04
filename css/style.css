@@ -144,13 +144,6 @@ html, body {
       color: #d0fbd0; }
     .content#deluxe_coffee button {
       margin-top: 20px; }
-    .content#deluxe_coffee img {
-      bottom: -100%;
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      max-width: 700px;
-      width: 100%; }
   .content#deluxe_food {
     background-image: url(../img/block__food__background.jpg); }
     .content#deluxe_food h1 {
