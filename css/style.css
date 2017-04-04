@@ -27,7 +27,10 @@ html, body {
     margin: 13px;
     font-size: 22px;
     width: auto;
-    transition: margin 0.5s; }
+    transition: margin 0.5s;
+    position: fixed;
+    top: 0;
+    right: 0; }
     .navbar ul.navbar_social li {
       display: inline-block;
       margin: 0 5px;
