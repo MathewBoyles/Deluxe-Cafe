@@ -90,6 +90,15 @@ html, body {
 .hide {
   display: none !important; }
 
+.text-left {
+  text-align: left !important; }
+
+.text-center {
+  text-align: center !important; }
+
+.text-right {
+  text-align: right !important; }
+
 .content {
   height: 100vh;
   text-align: center;
@@ -152,6 +161,43 @@ html, body {
       margin-top: 10px; }
     .content#deluxe_food button {
       margin-top: 20px; }
+  .content#deluxe_art {
+    background-image: url(../img/block__art__background.jpg); }
+    .content#deluxe_art h1 {
+      color: #f5d3b3; }
+    .content#deluxe_art h2, .content#deluxe_art p {
+      color: #fefaf7; }
+    .content#deluxe_art p {
+      margin-top: 10px; }
+      .content#deluxe_art p a {
+        color: #a3c6ff;
+        text-decoration: none; }
+    .content#deluxe_art button {
+      margin-top: 20px; }
+  .content#deluxe_location {
+    background-image: url(../img/block__location__background.jpg); }
+    .content#deluxe_location img {
+      width: 90%;
+      max-width: 500px;
+      margin-top: 30px; }
+    .content#deluxe_location h1 {
+      color: white; }
+    .content#deluxe_location h2, .content#deluxe_location p {
+      color: white; }
+    .content#deluxe_location button {
+      margin-top: 20px; }
+    .content#deluxe_location .b_l_info {
+      text-align: left; }
+      .content#deluxe_location .b_l_info p {
+        margin-top: 17px; }
+        .content#deluxe_location .b_l_info p a {
+          color: #FFF;
+          text-decoration: none; }
+        .content#deluxe_location .b_l_info p .fa {
+          font-size: 25px;
+          margin-top: -4px;
+          margin-right: 15px;
+          float: left; }
 
 .modal {
   display: none;
