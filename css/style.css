@@ -257,8 +257,8 @@ html, body {
   #modal-backdrop > .fa, #modal-backdrop-img > .fa {
     position: absolute;
     cursor: pointer;
-    top: 10px;
-    right: 10px;
+    top: 20px;
+    right: 20px;
     font-size: 60px;
     color: #FFF; }
 
