@@ -45,12 +45,22 @@ $(document).ready(function(){
       },100);
     });
   });
+  $('body').append('<div id="modal-backdrop"><span class="fa fa-times-circle-o"></span></div>');
+  $('body').append('<div id="img_modal" class="modal"><div class="modal-body"><img src="img/list__icon.jpg"></div></div>');
+  $('body').append('<div id="modal-backdrop-img"><span class="fa fa-times-circle-o"></span></div>');
   $('[data-modal]').click(function(){
-    $('#modal-backdrop').fadeIn();
+    if($($(this).attr('data-modal')).attr('id')=='img_modal'){
+      $('#img_modal').find('img').attr('src',$(this).attr('src'));
+      $('#modal-backdrop-img').fadeIn();
+    }else $('#modal-backdrop').fadeIn();
     $($(this).attr('data-modal')).fadeIn();
   });
   $('#modal-backdrop').click(function(){
     $(this).fadeOut();
     $('.modal:visible').fadeOut();
+  });
+  $('#modal-backdrop-img').click(function(){
+    $(this).fadeOut();
+    $('.modal#img_modal').fadeOut();
   });
 });
