@@ -44,8 +44,6 @@ $(document).ready(function(){
         $('body').removeClass('scrolling');
       },100);
     });
-  }).dblclick(function(){
-    $(this).find('.fa').toggleClass('fa-angle-down').toggleClass('fa-hand-o-down');
   });
   $('body').append('<div id="modal-backdrop"><span class="fa fa-times-circle-o"></span></div>');
   $('body').append('<div id="img_modal" class="modal"><div class="modal-body"><img src="img/list__icon.jpg"></div></div>');
