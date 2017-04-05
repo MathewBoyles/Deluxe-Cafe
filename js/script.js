@@ -15,17 +15,6 @@ $(document).ready(function(){
     $('.navbar > .navbar_links > li > a[data-fscroll="#'+$('.content.active:last').attr('id')+'"]').parent().addClass('active');
     if($('.content:not(.active)').is('*')) $('#scrolltip').removeClass('reverse');
     else $('#scrolltip').addClass('reverse');
-    if(!$('body').hasClass('scrolling')){
-      var do_scrolltop = ($('body').scrollTop()>previous_scroll) ? $('.content:not(.active):first') : $('.content.active:eq('+($('.content.active').length-2)+')');
-      if(do_scrolltop.is('*')){
-        $('body').addClass('scrolling').animate({scrollTop:do_scrolltop.offset()['top']},1000,function(){
-          setTimeout(function(){
-            $('body').removeClass('scrolling');
-          },100);
-        });
-      }
-      return false;
-    }
     previous_scroll = $('body').scrollTop();
   }).trigger('scroll');
   $('[data-fscroll]').click(function(){
