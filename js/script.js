@@ -1,5 +1,6 @@
 $(document).ready(function(){
   var previous_scroll = 0;
+  var scrollTimeout = null;
   $('body').addClass('scrolling').scrollTop(0);
   setTimeout(function(){
     $('body').removeClass('scrolling');
@@ -16,6 +17,13 @@ $(document).ready(function(){
     if($('.content:not(.active)').is('*')) $('#scrolltip').removeClass('reverse');
     else $('#scrolltip').addClass('reverse');
     previous_scroll = $('body').scrollTop();
+    if (scrollTimeout !== null) clearTimeout(scrollTimeout);
+    if(!$('body').hasClass('scrolling')) scrollTimeout = setTimeout(function(){
+      $('body').addClass('scrolling');
+      $('body').animate({scrollTop:($('.content.active:last').offset()['top'])},1000,function(){
+        $('body').removeClass('scrolling');
+      });
+    },750);
   }).trigger('scroll');
   $('[data-fscroll]').click(function(){
     if($($(this).attr('data-fscroll')).is('*')){
