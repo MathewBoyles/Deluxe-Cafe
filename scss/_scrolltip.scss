@@ -15,20 +15,33 @@
     font-size: 25px;
     margin-top: 2px;
     transition: margin 0.5s, transform 0.5s;
+    &.fa-hand-o-down {
+      font-size: 18px;
+      margin-top: 7px;
+    }
   }
   &:hover {
     .fa {
       margin-top: 6px;
+      &.fa-hand-o-down {
+        margin-top: 10px;
+      }
     }
   }
   &.reverse {
     .fa {
       transform: rotate(180deg);
       margin-left: -1px;
+      &.fa-hand-o-down {
+        margin-top: 5px;
+      }
     }
     &:hover {
       .fa {
         margin-top: -1px;
+      }
+      &.fa-hand-o-down {
+        margin-top: 2px;
       }
     }
   }

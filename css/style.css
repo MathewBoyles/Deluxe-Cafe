@@ -81,13 +81,22 @@ html, body {
     font-size: 25px;
     margin-top: 2px;
     transition: margin 0.5s, transform 0.5s; }
+    #scrolltip .fa.fa-hand-o-down {
+      font-size: 18px;
+      margin-top: 7px; }
   #scrolltip:hover .fa {
     margin-top: 6px; }
+    #scrolltip:hover .fa.fa-hand-o-down {
+      margin-top: 10px; }
   #scrolltip.reverse .fa {
     transform: rotate(180deg);
     margin-left: -1px; }
+    #scrolltip.reverse .fa.fa-hand-o-down {
+      margin-top: 5px; }
   #scrolltip.reverse:hover .fa {
     margin-top: -1px; }
+  #scrolltip.reverse:hover.fa-hand-o-down {
+    margin-top: 2px; }
 
 .hide {
   display: none !important; }
