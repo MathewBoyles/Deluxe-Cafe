@@ -135,8 +135,12 @@ $lighten: 15%;
     }
     .b_l_info {
       text-align: left;
+      width: 500px;
+      max-width: 90%;
+      margin: 0 auto;
       p {
         margin-top: 17px;
+        padding: 0;
         a {
           color: #FFF;
           text-decoration: none;
