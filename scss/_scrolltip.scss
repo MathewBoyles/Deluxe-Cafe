@@ -1,13 +1,13 @@
 #scrolltip {
   position: fixed;
   cursor: pointer;
-  bottom: 20px;
+  bottom: 25px;
   left: 50%;
   width: 30px;
   height: 30px;
   background: $nav_color;
   border-radius: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) scale(1.5);
   text-align: center;
   z-index: 100;
   .fa {
@@ -31,7 +31,6 @@
   &.reverse {
     .fa {
       transform: rotate(180deg);
-      margin-left: -1px;
       &.fa-hand-o-down {
         margin-top: 5px;
       }
