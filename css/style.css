@@ -172,6 +172,8 @@ html, body {
         .content#deluxe_cafe .gallery .picture img {
           max-height: 200px; } }
       @media (max-width: 660px) {
+        .content#deluxe_cafe .gallery .picture img {
+          max-height: 150px; }
         .content#deluxe_cafe .gallery .picture:nth-child(2) {
           display: none; } }
   .content#deluxe_coffee {
