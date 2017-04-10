@@ -162,6 +162,18 @@ html, body {
     .content#deluxe_cafe a {
       color: #FFF;
       font-size: 3em; }
+    .content#deluxe_cafe .gallery .picture {
+      display: inline-block; }
+      .content#deluxe_cafe .gallery .picture img {
+        max-height: 300px;
+        max-width: 100%;
+        margin-top: 20px; }
+      @media (max-width: 980px) {
+        .content#deluxe_cafe .gallery .picture img {
+          max-height: 200px; } }
+      @media (max-width: 660px) {
+        .content#deluxe_cafe .gallery .picture:nth-child(2) {
+          display: none; } }
   .content#deluxe_coffee {
     background-image: url(../img/block__coffee__background.jpg); }
     .content#deluxe_coffee h1 {

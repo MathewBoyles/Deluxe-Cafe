@@ -1,0 +1,14 @@
+.picture {
+  display: inline-block;
+  img {
+    height: 300px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .picture {
+    img {
+      &:nth-child()
+    }
+  }
+}
