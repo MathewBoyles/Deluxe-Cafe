@@ -173,9 +173,19 @@ html, body {
           max-height: 200px; } }
       @media (max-width: 660px) {
         .content#deluxe_cafe .gallery .picture img {
-          max-height: 150px; }
+          max-height: 150px; } }
+      @media (max-width: 500px) {
+        .content#deluxe_cafe .gallery .picture img {
+          max-height: 100px; } }
+      @media (max-width: 350px) {
         .content#deluxe_cafe .gallery .picture:nth-child(2) {
           display: none; } }
+      @media (max-height: 650px) {
+        .content#deluxe_cafe .gallery .picture img {
+          max-height: 100px; } }
+    @media (max-height: 450px) {
+      .content#deluxe_cafe .gallery {
+        display: none; } }
   .content#deluxe_coffee {
     background-image: url(../img/block__coffee__background.jpg); }
     .content#deluxe_coffee h1 {

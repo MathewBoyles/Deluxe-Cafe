@@ -87,9 +87,27 @@ $lighten: 15%;
             max-height: 150px;
           }
           &:nth-child(2){
+            // display: none;
+          }
+        }
+        @media (max-width: 500px){
+          img {
+            max-height: 100px;
+          }
+        }
+        @media (max-width: 350px){
+          &:nth-child(2){
             display: none;
           }
         }
+        @media (max-height: 650px){
+          img {
+            max-height: 100px;
+          }
+        }
+      }
+      @media (max-height: 450px){
+        display: none;
       }
     }
   }
